@@ -21,8 +21,7 @@ sys.path.append(target_dir)
 from cosyvoice.cli.cosyvoice import CosyVoice
 from cosyvoice.utils.file_utils import load_wav
 
-
-
+prompttext=None
 
 
 if __name__ == "__main__":
@@ -74,7 +73,7 @@ with open('./logs/chat_history.txt', 'a', encoding="utf-8") as file:
         result = client.predict(
                 tts_text=full_response,
                 mode_checkbox_group="3s极速复刻",
-                prompt_text="雏凤轻啼，我辈赓续思想，振翮思远，我辈共筑长天",
+                prompt_text=prompttext,
                 prompt_wav_upload=handle_file('D:/Aeshtron/src/TTS/prompt_wav/test.wav'),
                 prompt_wav_record=None,#handle_file('D:/Aeshtron/src/TTS/prompt_wav/test.wav'),
                 instruct_text="",
