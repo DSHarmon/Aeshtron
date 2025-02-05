@@ -1,0 +1,21 @@
+ollama
+sherpa-onnx
+sounddevice
+pyaudio
+pyyaml
+webrtcvad
+#pyttsx3
+playsound(修改支持格式)
+gradio_client
+
+os
+numpy
+loguru
+from .asr_interface import ASRInterface
+from .utils import download_and_extract
+onnxruntime
+requests
+tarfile
+pathlib
+tqdm
+loguru
